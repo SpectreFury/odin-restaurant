@@ -24,7 +24,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 0;
+  height: 100px;
 }
 
 nav img {
@@ -36,7 +36,8 @@ nav img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 400px;
+  width: 100%;
+  margin-top: 50px;
 }
 
 .hero h1 {
@@ -47,4 +48,73 @@ nav img {
 .hero p {
   font-weight: 700;
   font-size: 2.5rem;
+}
+
+.selection {
+  padding: 70px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.img-container {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.img-container:hover::after {
+  cursor: pointer;
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.img-container img {
+  width: 100%;
+  transition: scale 0.2s ease;
+}
+
+.img-container:hover img {
+  scale: 1.1;
+}
+
+.img-container h2 {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2rem;
+  border: 5px solid #850e35;
+  padding: 0.8rem 1.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.img-container:hover h2 {
+  display: block;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  height: 100px;
+}
+
+footer .legal-text {
+  font-size: 1.2rem;
+  font-weight: 500;
 }
