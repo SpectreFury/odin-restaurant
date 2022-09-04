@@ -65,6 +65,10 @@ nav img {
   overflow: hidden;
 }
 
+.img-container:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
 .img-container:hover::after {
   cursor: pointer;
   content: "";
@@ -101,7 +105,6 @@ nav img {
   cursor: pointer;
 }
 
-
 .img-container:hover h2 {
   display: block;
 }
@@ -110,11 +113,12 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #000;
+  background-color: #850e35;
   height: 100px;
 }
 
 footer .legal-text {
+  color: #fff;
   font-size: 1.2rem;
   font-weight: 500;
 }
