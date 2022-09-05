@@ -52,4 +52,16 @@ function sectionSelection() {
   return section;
 }
 
-export { navBar, sectionHero, sectionSelection };
+function footer() {
+  const footer = document.createElement("footer");
+
+  const legalText = document.createElement("div");
+  legalText.textContent = "Made by SpectreFury with ❤";
+  legalText.classList.add("legal-text");
+
+  footer.append(legalText);
+
+  return footer;
+}
+
+export { navBar, sectionHero, sectionSelection, footer };
