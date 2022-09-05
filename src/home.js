@@ -9,7 +9,7 @@ function navBar() {
   return nav;
 }
 
-function hero() {
+function sectionHero() {
   const section = document.createElement("section");
   section.classList.add("hero");
 
@@ -23,4 +23,33 @@ function hero() {
   return section;
 }
 
-export { navBar, hero };
+function sectionSelection() {
+  const section = document.createElement("section");
+  section.classList.add("selection");
+
+  const foodDiv = document.createElement("div");
+  const aboutDiv = document.createElement("div");
+
+  foodDiv.classList.add("food");
+  foodDiv.classList.add("img-container");
+  aboutDiv.classList.add("about");
+  aboutDiv.classList.add("img-container");
+
+  const foodImg = document.createElement("img");
+  foodImg.src = "./menu-icon.jpg";
+  const aboutImg = document.createElement("img");
+  aboutImg.src = "./witcher-logo-text.png";
+
+  const foodH2 = document.createElement("h2");
+  foodH2.textContent = "Menu";
+  const aboutH2 = document.createElement("h2");
+  aboutH2.textContent = "About";
+
+  foodDiv.append(foodImg, foodH2);
+  aboutDiv.append(aboutImg, aboutH2);
+
+  section.append(foodDiv, aboutDiv);
+  return section;
+}
+
+export { navBar, sectionHero, sectionSelection };
