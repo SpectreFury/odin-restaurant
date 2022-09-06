@@ -1,4 +1,4 @@
-function navBar() {
+function navBarHero() {
   const nav = document.createElement("nav");
   const img = document.createElement("img");
 
@@ -52,7 +52,7 @@ function sectionSelection() {
   return section;
 }
 
-function footer() {
+function footerHero() {
   const footer = document.createElement("footer");
 
   const legalText = document.createElement("div");
@@ -64,4 +64,4 @@ function footer() {
   return footer;
 }
 
-export { navBar, sectionHero, sectionSelection, footer };
+export { navBarHero, sectionHero, sectionSelection, footerHero };

@@ -1,15 +1,15 @@
-import { navBar, sectionHero, sectionSelection, footer } from "./home";
+import { navBarHero, sectionHero, sectionSelection, footerHero } from "./home";
 import eventListeners from "./eventListeners";
 
 const content = document.querySelector(".content");
 
 function addToContent() {
-  content.append(navBar());
+  content.append(navBarHero());
   content.append(sectionHero());
   content.append(sectionSelection());
-  content.append(footer());
+  content.append(footerHero());
 
   eventListeners();
 }
 
-addToContent();
+// addToContent();
