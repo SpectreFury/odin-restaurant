@@ -12,4 +12,4 @@ function addToContent() {
   eventListeners();
 }
 
-// addToContent();
+addToContent();
